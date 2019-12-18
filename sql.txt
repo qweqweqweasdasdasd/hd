@@ -1,0 +1,1 @@
+mysqldump -ubj26288_com -pAEHp62Wi5s5PsLhE --databases bj26288_com   > c:\db1.sql
