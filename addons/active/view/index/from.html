@@ -1,0 +1,60 @@
+{volist name="from" id="fm"}
+  <div class="foemzuo">{$fm.title}</div>
+  <div>
+    {eq name="fm.type" value="1"}
+        <div class="fontyou"><input type="text" name="from[]" isnull="$fm.isnull" type-data="{$fm.type}" title="{$fm.title}"  placeholder="{$fm.placeholder}" class="taninpt" value=""></div>
+    {/eq}
+    
+    
+    {eq name="fm.type" value="2"}
+        <div class="fontyou"><input type="number" name="from[]" isnull="$fm.isnull" type-data="{$fm.type}"  title="{$fm.title}" placeholder="{$fm.placeholder}" class="taninpt" value=""></div>
+    {/eq}
+    
+    
+    {eq name="fm.type" value="3"}
+        <div class="fontyou">
+          <input type="text"  name="from[]"  placeholder="{$fm.placeholder}" title="{$fm.title}" isnull="$fm.isnull"  type-data="{$fm.type}" class="taninpt" value="">
+          <span class="xuanze" id="upbtn_{$fm.id}"  >选择图片</span>
+        </div>
+        <script type="text/javascript">
+          $(document).ready(function(){
+            A.upload('{$fm.id}')
+          })
+        </script>
+    {/eq}
+    
+    
+    {eq name="fm.type" value="4"}
+        <div class="fontyou">
+          <textarea style="height: 100px;" name="from[]" title="{$fm.title}" isnull="$fm.isnull" maxlength="200" placeholder="{$fm.placeholder}"   type-data="{$fm.type}"  class="taninpt"   value=""> </textarea>
+        </div>
+    {/eq}
+    
+    
+    {eq name="fm.type" value="5"}
+      {php}
+        $nt = explode("\n",$fm['notes']);
+      {/php}
+      <div class="fontyou">
+      <select name="from[]" class="taninpt"  type-data="{$fm.type}" title="{$fm.title}" isnull="$fm.isnull">
+        <option value="">请选择</option>
+        {volist name="nt" id="vl"}
+          <option value="{$vl}">{$vl}</option>
+        {/volist}
+      </select>
+       </div>
+    {/eq}
+    
+    
+    {eq name="fm.type" value="6"}
+        <div class="fontyou"><input type="text" name="from[]"  isnull="$fm.isnull" title="{$fm.title}" placeholder="{$fm.placeholder}"  type-data="{$fm.type}" class="taninpt laydate-icon"   onClick="laydate({istime: true, format: 'YYYY-MM-DD hh:mm:ss'})" value=""></div>
+    {/eq}
+    
+    
+    
+    
+    <div class="cl"></div>
+  </div>
+{/volist}
+
+

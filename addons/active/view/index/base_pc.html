@@ -1,0 +1,180 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>{$site.name}</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="renderer" content="webkit">
+<meta name="viewport" content="width=device-width,user-scalable=no">
+<link href="__ACTIVE__/images/ico.ico" rel="shortcut icon">
+<link rel="stylesheet" rev="stylesheet" href="__ACTIVE__/style/reset.css" type="text/css">
+<link rel="stylesheet" rev="stylesheet" href="__ACTIVE__/style/global.css" type="text/css">
+<link rel="stylesheet" rev="stylesheet" href="__ACTIVE__/style/index.css" type="text/css">
+<script src="__ACTIVE__/libs/script/jquery.min.js"></script>
+<script type="text/javascript" src="__ACTIVE__/script/demo.js"></script>
+<script type="text/javascript" src="__ACTIVE__/script/index.js"></script>
+
+</head>
+<body>
+ 
+	
+  <div class="header">
+		<div class="inner">
+			<div class="logo"><h1><a href="#" class="" ><img src="__ACTIVE__/images/logo.png" alt="" /></a></h1></div>
+
+			<div class="fl img1"><img src="__ACTIVE__/images/img1.png" alt="" /></div>
+			<div class="fr shenhebtn" searchbtn><a href="javascript:;"  ><img src="__ACTIVE__/images/shenhe.png" alt="" /></a></div>
+		 
+     
+		</div>
+	</div>  
+	 
+	
+  <div class="cl"></div>
+   
+	<div class="cl">
+	</div>
+	<div class="content">
+    {block name="content"}{/block}
+    
+    
+    
+    <div class="cl h10">
+    </div>
+    <div class="cont1">
+      <div class="inner">
+        
+        <div class="youluntop">
+          <div class="luntopbox">
+            <div class="cl h22"></div>
+            <div class="luntop">
+              <ul id="infolistmsg">
+                 {volist name="records" id="rc"}
+                  <li>
+                    恭喜：
+                  <span class="zongse">
+                      ***{$rc.actuser|substr=2,6}***
+                  </span> 办理 
+                  <span class="tuse lunditlt"> 
+                    {$rc.title}
+                  </span></li>
+                
+                {/volist}
+                          
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+        
+        <div class="zuoitem">
+          <ul class="zuolist">
+            <li><a href="{$site.zuolist['nv1']}" target="_blank" class="list1"></a></li>
+            <li><a href="{$site.zuolist['nv2']}" target="_blank" class="list2"></a></li>
+            <li><a href="{$site.zuolist['nv3']}" target="_blank" class="list3"></a></li>
+            <li><a href="{$site.zuolist['nv4']}" target="_blank" class="list4"></a></li>
+            <li><a href="{$site.zuolist['nv5']}" target="_blank" class="list5"></a></li>
+            <li><a href="{$site.zuolist['nv6']}" target="_blank" class="list6"></a></li>
+          </ul>
+          
+          
+          <div class="cl"></div>
+        </div>
+        
+        <div class="cl h12"></div>
+        
+        <div class="cl "></div>
+       
+      </div>
+      
+      <div class="footer">
+        <div class="fimg"><img src="__ACTIVE__/images/fimg.png" alt="" /></div>
+        <br/>{$site.beian}   
+      </div>
+    </div>
+    
+    
+   
+  </div>
+	 
+  {block name="footer"}{/block}
+	 
+  {include file="index/script" /}
+  
+  
+  
+  <div class="layerconts layerconts-2">
+    <div class="logox"><img src="__ACTIVE__/images/logox.png" alt=""></div>
+    <div class="close layui-layer-close"  ></div>
+    <div class="tlbox">申请进度查询</div>
+    
+      <div class="forminpt">
+        <div>
+          <div class="foemzuo">会员帐号：</div>
+          <div class="fontyou"><input type="text" id="userid" name="userid" maxlength="22" placeholder="请输入您的会员ID" class="taninpt"></div>
+          <div class="cl"></div>
+        </div>
+        <div>
+          <div class="foemzuo">选择查询项目：</div>
+          <div class="fontyou">
+            <select class="taninpt" id="actid" name="actid">
+              <option value="">选择查询项目</option> 
+              {volist name="list" id="sv"}
+                <option value="{$sv.id}">{$sv.title}</option> 
+              {/volist}
+            </select> 
+            </div>
+          <div class="cl"></div>
+        </div>
+        <div>
+          <div class="foemzuo">&nbsp;</div>
+          <div class="fontyou">
+            <input type="button" value="点击查询" class="tanbtn1" id="searchsubmit" />
+          </div>
+          <div class="cl"></div>
+        </div>
+        <div class="cl h30"></div>
+        
+       <!--  <div class="tac"><a href="javascript:;" class="tanbtn2" @click="layerid=-1">活动申请首页</a></div> -->
+      </div>
+ 
+    
+  </div> 
+  
+  
+  
+  <div class="layerconts layerconts-3">
+    <div class="logox"><img src="__ACTIVE__/images/logox.png" alt=""></div>
+    <div class="close layui-layer-close"  ></div>
+    <div class="tlbox">查询结果</div>
+    <div id="detalox">
+      
+    </div>
+    <div class="cl h100"></div>
+  </div>
+ 
+
+<!--[if lt IE 11]>
+<div class="eachlisq">
+	<div class="" style="display:table;width:100%;height:100%">
+		<div class="" style="display:table-cell;vertical-align:middle">
+			<div class="dwnntl1">
+				温馨提示：<strong class="sainsnb">您的浏览器需要更新才能访问哦 ^_^</strong>
+			</div>
+			<div class="dqiangshiy">
+				请使用 <strong class="sainsnb">Chrome</strong>、 <strong class="sainsnb">firefox</strong>、 <strong class="sainsnb">Safari</strong>、 <strong class="sainsnb">opera</strong> 、 <strong class="sainsnb">Microsoft Edge</strong>、 <strong class="sainsnb">Internet Explorer 11</strong> 浏览器访问~
+			</div>
+			<p class="dsannp">
+				<a class="sannbw1" href="http://www.google.com/chrome" target="_blank"></a><a class="sannbw2" href="http://www.apple.com/safari" target="_blank"></a><a class="sannbw3" href="http://www.firefox.com/" target="_blank"></a><a class="sannbw4" href="http://www.opera.com/zh-cn" target="_blank"></a><a class="sannbw5" href="https://www.microsoft.com/en-us/windows/microsoft-edge" target="_blank"></a><a class="sannbw6" href="https://support.microsoft.com/en-us/help/17621/internet-explorer-downloads" target="_blank"></a>
+			</p>
+			<h4 class="dwnsnht">Please update to a modern browser</h4>
+		</div>
+	</div>
+</div>
+<style type="text/css">
+  .eachlisq{position:fixed;left:0;top:0;width:100%;height:100%;z-index:9999;background:#fff;text-align:center;color:#666}.sainsnb{border-bottom:1px dotted #930;font-weight:400;padding-bottom:2px;color:#930}.dwnntl1{font-size:23px;font-weight:700;line-height:50px}.dqiangshiy{font-size:18px;line-height:40px;font-weight:700}.dsannp{padding:40px 0;text-align:center}.dsannp a{display:block;width:125px;height:135px;margin:0 10px;display:inline-block;background:url(images/lqx.png) no-repeat}.dsannp a.sannbw1{background-position:0 0}.dsannp a.sannbw2{background-position:-125px 0}.dsannp a.sannbw3{background-position:-250px 0}.dsannp a.sannbw4{background-position:-375px 0}.dsannp a.sannbw5{background-position:-500px 0}.dsannp a.sannbw6{background-position:-625px 0}.dwnsnht{margin:20px 0;color:#888}
+</style>
+<![endif]-->
+ 
+</body>
+</html>

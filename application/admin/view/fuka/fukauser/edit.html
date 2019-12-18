@@ -1,0 +1,88 @@
+<form id="edit-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="">
+
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Username')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-username" class="form-control" name="row[username]" type="text" value="{$row.username}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Score')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-score" data-rule="required" class="form-control" name="row[score]" type="number" value="{$row.score}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Times')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-times" data-rule="required" class="form-control" name="row[times]" type="number" value="{$row.times}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Times_yq')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-times_yq" class="form-control" name="row[times_yq]" type="number" value="{$row.times_yq}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Ka1')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-ka1" data-rule="required" class="form-control" name="row[ka1]" type="number" value="{$row.ka1}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Ka2')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-ka2" data-rule="required" class="form-control" name="row[ka2]" type="number" value="{$row.ka2}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Ka3')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-ka3" data-rule="required" class="form-control" name="row[ka3]" type="number" value="{$row.ka3}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Ka4')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-ka4" data-rule="required" class="form-control" name="row[ka4]" type="number" value="{$row.ka4}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Ka5')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-ka5" class="form-control" name="row[ka5]" type="number" value="{$row.ka5}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Ka6')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-ka6" data-rule="required" class="form-control" name="row[ka6]" type="number" value="{$row.ka6}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Ka7')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-ka7" data-rule="required" class="form-control" name="row[ka7]" type="number" value="{$row.ka7}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Jinka')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-jinka" data-rule="required" class="form-control" name="row[jinka]" type="number" value="{$row.jinka}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Fuka')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-fuka" data-rule="required" class="form-control" name="row[fuka]" type="number" value="{$row.fuka}">
+        </div>
+    </div>
+    <div class="form-group layer-footer">
+        <label class="control-label col-xs-12 col-sm-2"></label>
+        <div class="col-xs-12 col-sm-8">
+            <button type="submit" class="btn btn-success btn-embossed disabled">{:__('OK')}</button>
+            <button type="reset" class="btn btn-default btn-embossed">{:__('Reset')}</button>
+        </div>
+    </div>
+</form>

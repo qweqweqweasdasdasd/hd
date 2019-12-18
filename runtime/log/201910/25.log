@@ -1,0 +1,314 @@
+---------------------------------------------------------------
+[ 2019-10-25T23:58:00+08:00 ] 180.232.115.69 GET 91078yhdt.com/admin_20191009_91qp_mb_yh.php/index/getcount
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=sql_91078yhdt_co;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_active_user` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_active_user` WHERE  `status` = 0 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2019-10-25T23:58:03+08:00 ] 121.31.246.132 GET 91078yhdt.com/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=sql_91078yhdt_co;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_active_user` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `A`.`actuser`,`B`.`title`,`A`.`createtime` FROM `fa_active_user` `A` INNER JOIN `fa_active_actlist` `B` ON `B`.`id`=`A`.`act_id` WHERE  `status` = 1  AND `A`.`deletetime` IS NULL ORDER BY `A`.`createtime` DESC LIMIT 30 [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_active_banner` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_active_banner` ORDER BY `weigh` DESC [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2019-10-25T23:58:04+08:00 ] 121.31.246.132 POST 91078yhdt.com/addons/active/index/formlist.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=sql_91078yhdt_co;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_active_user` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `A`.`actuser`,`B`.`title`,`A`.`createtime` FROM `fa_active_user` `A` INNER JOIN `fa_active_actlist` `B` ON `B`.`id`=`A`.`act_id` WHERE  `status` = 1  AND `A`.`deletetime` IS NULL ORDER BY `A`.`createtime` DESC LIMIT 30 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_active_banner` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_active_banner` ORDER BY `weigh` DESC [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2019-10-25T23:58:06+08:00 ] 180.232.115.69 GET 91078yhdt.com/admin_20191009_91qp_mb_yh.php/index/getcount
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=sql_91078yhdt_co;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_active_user` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_active_user` WHERE  `status` = 0 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2019-10-25T23:58:13+08:00 ] 180.232.115.69 GET 91078yhdt.com/admin_20191009_91qp_mb_yh.php/index/getcount
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=sql_91078yhdt_co;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_active_user` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_active_user` WHERE  `status` = 0 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2019-10-25T23:58:18+08:00 ] 121.31.246.132 POST 91078yhdt.com/addons/active/index/saveuser.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=sql_91078yhdt_co;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_active_user` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `A`.`actuser`,`B`.`title`,`A`.`createtime` FROM `fa_active_user` `A` INNER JOIN `fa_active_actlist` `B` ON `B`.`id`=`A`.`act_id` WHERE  `status` = 1  AND `A`.`deletetime` IS NULL ORDER BY `A`.`createtime` DESC LIMIT 30 [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_active_banner` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_active_banner` ORDER BY `weigh` DESC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_active_actlist` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_active_actlist` WHERE  `id` = 71  AND `switch` = '1'  AND `deletetime` IS NULL LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `fa_active_user` (`actuser` , `act_id` , `admin_ids` , `info` , `createtime` , `ip`) VALUES ('cxk121380' , 71 , '2' , '[]' , 1572019098 , '121.31.246.132') [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2019-10-25T23:58:19+08:00 ] 180.232.115.69 GET 91078yhdt.com/admin_20191009_91qp_mb_yh.php/index/getcount
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=sql_91078yhdt_co;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_active_user` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_active_user` WHERE  `status` = 0 LIMIT 1 [ RunTime:0.015600s ]
+---------------------------------------------------------------
+[ 2019-10-25T23:58:24+08:00 ] 180.232.115.69 GET 91078yhdt.com/admin_20191009_91qp_mb_yh.php/index/getcount
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=sql_91078yhdt_co;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_active_user` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_active_user` WHERE  `status` = 0 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2019-10-25T23:58:30+08:00 ] 180.232.115.69 GET 91078yhdt.com/admin_20191009_91qp_mb_yh.php/index/getcount
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=sql_91078yhdt_co;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_active_user` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_active_user` WHERE  `status` = 0 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2019-10-25T23:58:32+08:00 ] 180.232.115.69 POST 91078yhdt.com/admin_20191009_91qp_mb_yh.php/active/user/apply_tg/status/1/id/15964
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=sql_91078yhdt_co;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='2' and ag.status='normal' ) [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal'  AND `id` IN (316,317,318,319,320,321,322,323,324,325,326,327,328,329,330,331,332,333,334,335,336,337,338,339,340,341,342,343,344,346,347,348,349,350,351,352,353,354,355,356,357,358,359,360,361,376,377,378,379,380,381,402,403,404,405,406,407,408,428,429,430,431,432,433,434,345,368) [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=sql_91078yhdt_co;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_active_user` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] UPDATE `fa_active_user`  SET `status`=1  WHERE (  `id` = 15964 ) AND `fa_active_user`.`deletetime` IS NULL [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin_log` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `fa_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('优惠活动 会员管理 默认生成的控制器所继承的父类中有index/add/edit/del/multi五个基础方法、destroy/restore/recyclebin三个回收站方法因此在当前控制器中可不用编写增删改查的代码,除非需要自己控制这部分逻辑需要将application/admin/library/traits/Backend.php中对应的方法复制到当前控制器,然后进行修改' , '{\"status\":\"1\",\"id\":\"15964\"}' , '/admin_20191009_91qp_mb_yh.php/active/user/apply_tg/status/1/id/15964' , 2 , 'admin' , 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36' , '180.232.115.69' , 1572019112) [ RunTime:0.046800s ]
+---------------------------------------------------------------
+[ 2019-10-25T23:58:32+08:00 ] 180.232.115.69 GET 91078yhdt.com/admin_20191009_91qp_mb_yh.php/active/user/index?addtabs=1&sort=id&order=desc&offset=20&limit=10&filter=%7B%7D&op=%7B%7D&_=1572013873563
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=sql_91078yhdt_co;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='2' and ag.status='normal' ) [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal'  AND `id` IN (316,317,318,319,320,321,322,323,324,325,326,327,328,329,330,331,332,333,334,335,336,337,338,339,340,341,342,343,344,346,347,348,349,350,351,352,353,354,355,356,357,358,359,360,361,376,377,378,379,380,381,402,403,404,405,406,407,408,428,429,430,431,432,433,434,345,368) [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=sql_91078yhdt_co;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_active_user` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_active_user` WHERE (  (  (  FIND_IN_SET(2,admin_ids) ) ) ) AND `fa_active_user`.`deletetime` IS NULL ORDER BY `id` DESC LIMIT 1 [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_active_user` WHERE (  (  (  FIND_IN_SET(2,admin_ids) ) ) ) AND `fa_active_user`.`deletetime` IS NULL ORDER BY `id` DESC LIMIT 20,10 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2019-10-25T23:58:34+08:00 ] 180.232.115.69 GET 91078yhdt.com/admin_20191009_91qp_mb_yh.php/active/user/index?addtabs=1&sort=id&order=desc&offset=30&limit=10&filter=%7B%7D&op=%7B%7D&_=1572013873564
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=sql_91078yhdt_co;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='2' and ag.status='normal' ) [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal'  AND `id` IN (316,317,318,319,320,321,322,323,324,325,326,327,328,329,330,331,332,333,334,335,336,337,338,339,340,341,342,343,344,346,347,348,349,350,351,352,353,354,355,356,357,358,359,360,361,376,377,378,379,380,381,402,403,404,405,406,407,408,428,429,430,431,432,433,434,345,368) [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=sql_91078yhdt_co;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_active_user` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_active_user` WHERE (  (  (  FIND_IN_SET(2,admin_ids) ) ) ) AND `fa_active_user`.`deletetime` IS NULL ORDER BY `id` DESC LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_active_user` WHERE (  (  (  FIND_IN_SET(2,admin_ids) ) ) ) AND `fa_active_user`.`deletetime` IS NULL ORDER BY `id` DESC LIMIT 30,10 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2019-10-25T23:58:36+08:00 ] 180.232.115.69 GET 91078yhdt.com/admin_20191009_91qp_mb_yh.php/active/user/index?addtabs=1&sort=id&order=desc&offset=20&limit=10&filter=%7B%7D&op=%7B%7D&_=1572013873565
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=sql_91078yhdt_co;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='2' and ag.status='normal' ) [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal'  AND `id` IN (316,317,318,319,320,321,322,323,324,325,326,327,328,329,330,331,332,333,334,335,336,337,338,339,340,341,342,343,344,346,347,348,349,350,351,352,353,354,355,356,357,358,359,360,361,376,377,378,379,380,381,402,403,404,405,406,407,408,428,429,430,431,432,433,434,345,368) [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=sql_91078yhdt_co;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_active_user` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_active_user` WHERE (  (  (  FIND_IN_SET(2,admin_ids) ) ) ) AND `fa_active_user`.`deletetime` IS NULL ORDER BY `id` DESC LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_active_user` WHERE (  (  (  FIND_IN_SET(2,admin_ids) ) ) ) AND `fa_active_user`.`deletetime` IS NULL ORDER BY `id` DESC LIMIT 20,10 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2019-10-25T23:58:36+08:00 ] 180.232.115.69 GET 91078yhdt.com/admin_20191009_91qp_mb_yh.php/index/getcount
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=sql_91078yhdt_co;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_active_user` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_active_user` WHERE  `status` = 0 LIMIT 1 [ RunTime:0.015600s ]
+---------------------------------------------------------------
+[ 2019-10-25T23:58:43+08:00 ] 180.232.115.69 GET 91078yhdt.com/admin_20191009_91qp_mb_yh.php/index/getcount
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=sql_91078yhdt_co;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_active_user` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_active_user` WHERE  `status` = 0 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2019-10-25T23:58:49+08:00 ] 180.232.115.69 GET 91078yhdt.com/admin_20191009_91qp_mb_yh.php/index/getcount
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=sql_91078yhdt_co;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_active_user` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_active_user` WHERE  `status` = 0 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2019-10-25T23:58:55+08:00 ] 180.232.115.69 GET 91078yhdt.com/admin_20191009_91qp_mb_yh.php/index/getcount
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=sql_91078yhdt_co;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_active_user` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_active_user` WHERE  `status` = 0 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2019-10-25T23:59:01+08:00 ] 180.232.115.69 GET 91078yhdt.com/admin_20191009_91qp_mb_yh.php/index/getcount
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=sql_91078yhdt_co;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_active_user` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_active_user` WHERE  `status` = 0 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2019-10-25T23:59:07+08:00 ] 180.232.115.69 GET 91078yhdt.com/admin_20191009_91qp_mb_yh.php/index/getcount
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=sql_91078yhdt_co;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_active_user` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_active_user` WHERE  `status` = 0 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2019-10-25T23:59:13+08:00 ] 180.232.115.69 GET 91078yhdt.com/admin_20191009_91qp_mb_yh.php/index/getcount
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=sql_91078yhdt_co;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_active_user` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_active_user` WHERE  `status` = 0 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2019-10-25T23:59:18+08:00 ] 180.232.115.69 POST 91078yhdt.com/admin_20191009_91qp_mb_yh.php/active/user/apply_tg/status/1/id/15965
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=sql_91078yhdt_co;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='2' and ag.status='normal' ) [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal'  AND `id` IN (316,317,318,319,320,321,322,323,324,325,326,327,328,329,330,331,332,333,334,335,336,337,338,339,340,341,342,343,344,346,347,348,349,350,351,352,353,354,355,356,357,358,359,360,361,376,377,378,379,380,381,402,403,404,405,406,407,408,428,429,430,431,432,433,434,345,368) [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=sql_91078yhdt_co;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_active_user` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] UPDATE `fa_active_user`  SET `status`=1  WHERE (  `id` = 15965 ) AND `fa_active_user`.`deletetime` IS NULL [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin_log` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `fa_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('优惠活动 会员管理 默认生成的控制器所继承的父类中有index/add/edit/del/multi五个基础方法、destroy/restore/recyclebin三个回收站方法因此在当前控制器中可不用编写增删改查的代码,除非需要自己控制这部分逻辑需要将application/admin/library/traits/Backend.php中对应的方法复制到当前控制器,然后进行修改' , '{\"status\":\"1\",\"id\":\"15965\"}' , '/admin_20191009_91qp_mb_yh.php/active/user/apply_tg/status/1/id/15965' , 2 , 'admin' , 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36' , '180.232.115.69' , 1572019157) [ RunTime:0.031200s ]
+---------------------------------------------------------------
+[ 2019-10-25T23:59:18+08:00 ] 180.232.115.69 GET 91078yhdt.com/admin_20191009_91qp_mb_yh.php/active/user/index?addtabs=1&sort=id&order=desc&offset=20&limit=10&filter=%7B%7D&op=%7B%7D&_=1572013873566
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=sql_91078yhdt_co;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='2' and ag.status='normal' ) [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal'  AND `id` IN (316,317,318,319,320,321,322,323,324,325,326,327,328,329,330,331,332,333,334,335,336,337,338,339,340,341,342,343,344,346,347,348,349,350,351,352,353,354,355,356,357,358,359,360,361,376,377,378,379,380,381,402,403,404,405,406,407,408,428,429,430,431,432,433,434,345,368) [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=sql_91078yhdt_co;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_active_user` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_active_user` WHERE (  (  (  FIND_IN_SET(2,admin_ids) ) ) ) AND `fa_active_user`.`deletetime` IS NULL ORDER BY `id` DESC LIMIT 1 [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_active_user` WHERE (  (  (  FIND_IN_SET(2,admin_ids) ) ) ) AND `fa_active_user`.`deletetime` IS NULL ORDER BY `id` DESC LIMIT 20,10 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2019-10-25T23:59:18+08:00 ] 180.232.115.69 GET 91078yhdt.com/admin_20191009_91qp_mb_yh.php/index/getcount
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=sql_91078yhdt_co;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_active_user` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_active_user` WHERE  `status` = 0 LIMIT 1 [ RunTime:0.015600s ]
+---------------------------------------------------------------
+[ 2019-10-25T23:59:19+08:00 ] 183.190.227.120 GET 91078yhdt.com/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=sql_91078yhdt_co;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_active_user` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `A`.`actuser`,`B`.`title`,`A`.`createtime` FROM `fa_active_user` `A` INNER JOIN `fa_active_actlist` `B` ON `B`.`id`=`A`.`act_id` WHERE  `status` = 1  AND `A`.`deletetime` IS NULL ORDER BY `A`.`createtime` DESC LIMIT 30 [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_active_banner` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_active_banner` ORDER BY `weigh` DESC [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2019-10-25T23:59:19+08:00 ] 183.190.227.120 POST 91078yhdt.com/addons/active/index/formlist.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=sql_91078yhdt_co;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_active_user` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `A`.`actuser`,`B`.`title`,`A`.`createtime` FROM `fa_active_user` `A` INNER JOIN `fa_active_actlist` `B` ON `B`.`id`=`A`.`act_id` WHERE  `status` = 1  AND `A`.`deletetime` IS NULL ORDER BY `A`.`createtime` DESC LIMIT 30 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_active_banner` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_active_banner` ORDER BY `weigh` DESC [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2019-10-25T23:59:23+08:00 ] 183.190.227.120 GET 91078yhdt.com/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=sql_91078yhdt_co;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_active_user` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT `A`.`actuser`,`B`.`title`,`A`.`createtime` FROM `fa_active_user` `A` INNER JOIN `fa_active_actlist` `B` ON `B`.`id`=`A`.`act_id` WHERE  `status` = 1  AND `A`.`deletetime` IS NULL ORDER BY `A`.`createtime` DESC LIMIT 30 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_active_banner` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_active_banner` ORDER BY `weigh` DESC [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2019-10-25T23:59:23+08:00 ] 183.190.227.120 POST 91078yhdt.com/addons/active/index/formlist.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015600s ] mysql:host=127.0.0.1;dbname=sql_91078yhdt_co;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_active_user` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `A`.`actuser`,`B`.`title`,`A`.`createtime` FROM `fa_active_user` `A` INNER JOIN `fa_active_actlist` `B` ON `B`.`id`=`A`.`act_id` WHERE  `status` = 1  AND `A`.`deletetime` IS NULL ORDER BY `A`.`createtime` DESC LIMIT 30 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_active_banner` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_active_banner` ORDER BY `weigh` DESC [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2019-10-25T23:59:24+08:00 ] 183.190.227.120 GET 91078yhdt.com/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=sql_91078yhdt_co;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_active_user` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT `A`.`actuser`,`B`.`title`,`A`.`createtime` FROM `fa_active_user` `A` INNER JOIN `fa_active_actlist` `B` ON `B`.`id`=`A`.`act_id` WHERE  `status` = 1  AND `A`.`deletetime` IS NULL ORDER BY `A`.`createtime` DESC LIMIT 30 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_active_banner` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_active_banner` ORDER BY `weigh` DESC [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2019-10-25T23:59:25+08:00 ] 180.232.115.69 GET 91078yhdt.com/admin_20191009_91qp_mb_yh.php/index/getcount
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=sql_91078yhdt_co;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_active_user` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_active_user` WHERE  `status` = 0 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2019-10-25T23:59:25+08:00 ] 183.190.227.120 POST 91078yhdt.com/addons/active/index/formlist.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=sql_91078yhdt_co;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_active_user` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `A`.`actuser`,`B`.`title`,`A`.`createtime` FROM `fa_active_user` `A` INNER JOIN `fa_active_actlist` `B` ON `B`.`id`=`A`.`act_id` WHERE  `status` = 1  AND `A`.`deletetime` IS NULL ORDER BY `A`.`createtime` DESC LIMIT 30 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_active_banner` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_active_banner` ORDER BY `weigh` DESC [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2019-10-25T23:59:25+08:00 ] 183.190.227.120 GET 91078yhdt.com/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=sql_91078yhdt_co;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_active_user` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `A`.`actuser`,`B`.`title`,`A`.`createtime` FROM `fa_active_user` `A` INNER JOIN `fa_active_actlist` `B` ON `B`.`id`=`A`.`act_id` WHERE  `status` = 1  AND `A`.`deletetime` IS NULL ORDER BY `A`.`createtime` DESC LIMIT 30 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_active_banner` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_active_banner` ORDER BY `weigh` DESC [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2019-10-25T23:59:26+08:00 ] 183.190.227.120 POST 91078yhdt.com/addons/active/index/formlist.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=sql_91078yhdt_co;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_active_user` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `A`.`actuser`,`B`.`title`,`A`.`createtime` FROM `fa_active_user` `A` INNER JOIN `fa_active_actlist` `B` ON `B`.`id`=`A`.`act_id` WHERE  `status` = 1  AND `A`.`deletetime` IS NULL ORDER BY `A`.`createtime` DESC LIMIT 30 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_active_banner` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_active_banner` ORDER BY `weigh` DESC [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2019-10-25T23:59:26+08:00 ] 183.190.227.120 GET 91078yhdt.com/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=sql_91078yhdt_co;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_active_user` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `A`.`actuser`,`B`.`title`,`A`.`createtime` FROM `fa_active_user` `A` INNER JOIN `fa_active_actlist` `B` ON `B`.`id`=`A`.`act_id` WHERE  `status` = 1  AND `A`.`deletetime` IS NULL ORDER BY `A`.`createtime` DESC LIMIT 30 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_active_banner` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_active_banner` ORDER BY `weigh` DESC [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2019-10-25T23:59:27+08:00 ] 183.190.227.120 POST 91078yhdt.com/addons/active/index/formlist.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=sql_91078yhdt_co;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_active_user` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `A`.`actuser`,`B`.`title`,`A`.`createtime` FROM `fa_active_user` `A` INNER JOIN `fa_active_actlist` `B` ON `B`.`id`=`A`.`act_id` WHERE  `status` = 1  AND `A`.`deletetime` IS NULL ORDER BY `A`.`createtime` DESC LIMIT 30 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_active_banner` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_active_banner` ORDER BY `weigh` DESC [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2019-10-25T23:59:31+08:00 ] 180.232.115.69 GET 91078yhdt.com/admin_20191009_91qp_mb_yh.php/index/getcount
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=sql_91078yhdt_co;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_active_user` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_active_user` WHERE  `status` = 0 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2019-10-25T23:59:33+08:00 ] 180.232.115.69 POST 91078yhdt.com/admin_20191009_91qp_mb_yh.php/active/user/apply_tg/status/2/id/15966
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015600s ] mysql:host=127.0.0.1;dbname=sql_91078yhdt_co;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='2' and ag.status='normal' ) [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal'  AND `id` IN (316,317,318,319,320,321,322,323,324,325,326,327,328,329,330,331,332,333,334,335,336,337,338,339,340,341,342,343,344,346,347,348,349,350,351,352,353,354,355,356,357,358,359,360,361,376,377,378,379,380,381,402,403,404,405,406,407,408,428,429,430,431,432,433,434,345,368) [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=sql_91078yhdt_co;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_active_user` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] UPDATE `fa_active_user`  SET `status`=2  WHERE (  `id` = 15966 ) AND `fa_active_user`.`deletetime` IS NULL [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin_log` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `fa_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('优惠活动 会员管理 默认生成的控制器所继承的父类中有index/add/edit/del/multi五个基础方法、destroy/restore/recyclebin三个回收站方法因此在当前控制器中可不用编写增删改查的代码,除非需要自己控制这部分逻辑需要将application/admin/library/traits/Backend.php中对应的方法复制到当前控制器,然后进行修改' , '{\"status\":\"2\",\"id\":\"15966\"}' , '/admin_20191009_91qp_mb_yh.php/active/user/apply_tg/status/2/id/15966' , 2 , 'admin' , 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36' , '180.232.115.69' , 1572019173) [ RunTime:0.031200s ]
+---------------------------------------------------------------
+[ 2019-10-25T23:59:33+08:00 ] 180.232.115.69 GET 91078yhdt.com/admin_20191009_91qp_mb_yh.php/active/user/index?addtabs=1&sort=id&order=desc&offset=20&limit=10&filter=%7B%7D&op=%7B%7D&_=1572013873567
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=sql_91078yhdt_co;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='2' and ag.status='normal' ) [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal'  AND `id` IN (316,317,318,319,320,321,322,323,324,325,326,327,328,329,330,331,332,333,334,335,336,337,338,339,340,341,342,343,344,346,347,348,349,350,351,352,353,354,355,356,357,358,359,360,361,376,377,378,379,380,381,402,403,404,405,406,407,408,428,429,430,431,432,433,434,345,368) [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=sql_91078yhdt_co;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_active_user` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_active_user` WHERE (  (  (  FIND_IN_SET(2,admin_ids) ) ) ) AND `fa_active_user`.`deletetime` IS NULL ORDER BY `id` DESC LIMIT 1 [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_active_user` WHERE (  (  (  FIND_IN_SET(2,admin_ids) ) ) ) AND `fa_active_user`.`deletetime` IS NULL ORDER BY `id` DESC LIMIT 20,10 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2019-10-25T23:59:36+08:00 ] 180.232.115.69 GET 91078yhdt.com/admin_20191009_91qp_mb_yh.php/index/getcount
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=sql_91078yhdt_co;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_active_user` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_active_user` WHERE  `status` = 0 LIMIT 1 [ RunTime:0.015600s ]
+---------------------------------------------------------------
+[ 2019-10-25T23:59:41+08:00 ] 183.190.227.120 GET 91078yhdt.com/addons/active/index/detail.html?id=45
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=sql_91078yhdt_co;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_active_user` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT `A`.`actuser`,`B`.`title`,`A`.`createtime` FROM `fa_active_user` `A` INNER JOIN `fa_active_actlist` `B` ON `B`.`id`=`A`.`act_id` WHERE  `status` = 1  AND `A`.`deletetime` IS NULL ORDER BY `A`.`createtime` DESC LIMIT 30 [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_active_banner` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_active_banner` ORDER BY `weigh` DESC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_active_actlist` [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2019-10-25T23:59:41+08:00 ] 183.190.227.120 POST 91078yhdt.com/addons/active/index/formlist.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=sql_91078yhdt_co;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_active_user` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `A`.`actuser`,`B`.`title`,`A`.`createtime` FROM `fa_active_user` `A` INNER JOIN `fa_active_actlist` `B` ON `B`.`id`=`A`.`act_id` WHERE  `status` = 1  AND `A`.`deletetime` IS NULL ORDER BY `A`.`createtime` DESC LIMIT 30 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_active_banner` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_active_banner` ORDER BY `weigh` DESC [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2019-10-25T23:59:42+08:00 ] 180.232.115.69 GET 91078yhdt.com/admin_20191009_91qp_mb_yh.php/index/getcount
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=sql_91078yhdt_co;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_active_user` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_active_user` WHERE  `status` = 0 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2019-10-25T23:59:43+08:00 ] 117.136.99.149 GET 91078yhdt.com/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=sql_91078yhdt_co;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_active_user` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `A`.`actuser`,`B`.`title`,`A`.`createtime` FROM `fa_active_user` `A` INNER JOIN `fa_active_actlist` `B` ON `B`.`id`=`A`.`act_id` WHERE  `status` = 1  AND `A`.`deletetime` IS NULL ORDER BY `A`.`createtime` DESC LIMIT 30 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_active_banner` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_active_banner` ORDER BY `weigh` DESC [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2019-10-25T23:59:43+08:00 ] 117.136.99.149 GET 91078yhdt.com/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=sql_91078yhdt_co;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_active_user` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `A`.`actuser`,`B`.`title`,`A`.`createtime` FROM `fa_active_user` `A` INNER JOIN `fa_active_actlist` `B` ON `B`.`id`=`A`.`act_id` WHERE  `status` = 1  AND `A`.`deletetime` IS NULL ORDER BY `A`.`createtime` DESC LIMIT 30 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_active_banner` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_active_banner` ORDER BY `weigh` DESC [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2019-10-25T23:59:48+08:00 ] 180.232.115.69 GET 91078yhdt.com/admin_20191009_91qp_mb_yh.php/index/getcount
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=sql_91078yhdt_co;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_active_user` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_active_user` WHERE  `status` = 0 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2019-10-25T23:59:55+08:00 ] 180.232.115.69 GET 91078yhdt.com/admin_20191009_91qp_mb_yh.php/index/getcount
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=sql_91078yhdt_co;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_active_user` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_active_user` WHERE  `status` = 0 LIMIT 1 [ RunTime:0.000000s ]

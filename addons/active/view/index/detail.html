@@ -1,0 +1,146 @@
+﻿<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>{$site.name}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="__ACTIVE__/css/reset.css">
+  <link rel="stylesheet" type="text/css" href="__ACTIVE__/css/swiper.min.css">
+  <link rel="stylesheet" type="text/css" href="__ACTIVE__/css/style.css">
+  
+<script src="__ACTIVE__/libs/script/jquery.min.js"></script>
+<script type="text/javascript" src="__ACTIVE__/script/demo.js"></script>
+<script src="__ACTIVE__/libs/layer/layer.js"></script>
+<script type="text/javascript" src="__ACTIVE__/script/index.js"></script>
+ </head>
+ <body style="background:#171717;">
+  	<div class="header">
+    	<a href="" class="logo"></a>
+        <a href="javascript:void(0)" searchbtn class="searchBtn"></a>
+    </div>
+    <div class="line"></div>
+		<div class="subconsq" style="width:80%;margin:0 auto;padding-top:.3rem;">
+          <form name="" id="saveform" action="{:addon_url('index/saveuser')}" method="post">
+            <div class="forminpt">
+             <!--  <div>
+                <div class="foemzuo">申请主题：</div>
+                <div class="fontyou">
+                  <div class="yeoywz">
+                     <span class="" id="tantl">畅玩MG电子游艺 天天返利送不停</span> 
+                        
+                  </div>
+                </div>
+                <div class="cl"></div>
+              </div>
+ -->
+              <div>
+                <div class="foemzuo">会员账号：</div>
+                <div class="fontyou"><input type="text" id="actuser" placeholder="请输入会员账号" class="taninpt" value=""></div>
+                <div class="cl"></div>
+              </div>
+              <div id="formbx">
+                {$form}
+              </div>
+              <div>
+                <div class="foemzuo">验证码：</div>
+                <div class="fontyou">
+                  <input class="taninpt taninpt-yzm" id="vcode" placeholder="输入验证码" type="text"> 
+                  <img src="{:captcha_src()}" onclick="A.getcode()" align="absmiddle" alt="验证码,看不清楚?请点击刷新验证码" class="max verifyimg reloadverify" height="29" id="vcode_img" style="cursor : pointer;" width="110"> 
+                </div>
+                <div class="cl"></div>
+              </div>
+              <div>
+                <div class="foemzuo">&nbsp;</div>
+                <div class="fontyou">
+                  <a href="javascript:;" onclick="A.reg()" class="tanbtn1 layerbtn">点击申请</a>
+                  <!-- <a href="javascript:;" @click="layerid=2" class="tanbtn1 layerbtn" >审核进度查询</a> -->
+                </div>
+                <div class="cl"></div>
+              </div>
+              
+            </div>
+          
+          </form>
+          
+        </div>
+    <div class="ruleBox">
+    	<h2>
+        
+				<span class="">{$content.title|htmlspecialchars}</span>
+				<a href="./" class="backbtn" >返回</a>
+			</h2>
+        
+        {$content['content']}
+        
+        
+    </div>
+    <div class="h120"></div>
+    <div class="h120"></div>
+     <div class="footer">
+        <a href="{$site.zuolist['nv1']}"><img src="__ACTIVE__/images/foot4.png"><p>返回首页</p></a>
+        <a href="{$site.zuolist['nv2']}"><img src="__ACTIVE__/images/foot1.png"><p>下载最新APP</p></a>
+        <a href="{$site.zuolist['nv3']}"><img src="__ACTIVE__/images/foot2.png"><p>线路检测</p></a>
+        <a href="{$site.zuolist['nv4']}"><img src="__ACTIVE__/images/foot3.png"><p>在线客服</p></a>
+    </div>
+
+
+{include file="index/script" /}
+
+
+
+<!-- 首页弹窗 -->
+   
+
+<div class="layerconts layerconts-2">
+  <div class="logox"><img src="__ACTIVE__/images/logox.png" alt=""></div>
+  <div class="close layui-layer-close"  ></div>
+  <div class="tlbox">申请进度查询</div>
+  
+    <div class="forminpt">
+      <div>
+        <div class="foemzuo">会员帐号：</div>
+        <div class="fontyou"><input type="text" id="userid" name="userid" maxlength="22" placeholder="填写你的会员账号" class="taninpt"></div>
+        <div class="cl"></div>
+      </div>
+      <div>
+        <div class="foemzuo">选择查询项目：</div>
+        <div class="fontyou">
+          <select class="taninpt" id="actid" name="actid">
+            <option value="">选择查询项目</option> 
+            {volist name="list" id="sv"}
+              <option value="{$sv.id}">{$sv.title}</option> 
+            {/volist}
+          </select> 
+          </div>
+        <div class="cl"></div>
+      </div>
+      <div>
+        <div class="foemzuo">&nbsp;</div>
+        <div class="fontyou">
+          <input type="button" value="点击查询" class="tanbtn1" id="searchsubmit" />
+        </div>
+        <div class="cl"></div>
+      </div>
+      <div class="cl h30"></div>
+      
+     <!--  <div class="tac"><a href="javascript:;" class="tanbtn2" @click="layerid=-1">活动申请首页</a></div> -->
+    </div>
+
+  
+</div> 
+
+
+
+<div class="layerconts layerconts-3">
+  <div class="logox"><img src="__ACTIVE__/images/logox.png" alt=""></div>
+  <div class="close layui-layer-close"  ></div>
+  <div class="tlbox">查询结果</div>
+  <div id="detalox">
+    
+  </div>
+  <div class="cl h100"></div>
+</div>
+
+ </body>
+ 
+</html>

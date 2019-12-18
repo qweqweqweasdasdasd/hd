@@ -1,0 +1,54 @@
+<div>
+  <div class="tac cw">
+    <div class="yeoywz">
+       <span class="">{$row_act['title']|htmlspecialchars}</span> 
+       <a class="hong" href="{:addon_url('active/index/detail',array('id'=>$row_act['id']))}"  target="_blank">查看详情</a>
+                    
+       
+    </div>
+  </div>
+  <div class="cl"></div>
+</div>
+
+<table class="tablebox">
+  <tbody>
+    <tr class="tdtou">
+      <td>会员账号</td> 
+      <td>申请时间</td>
+      <td>申请状态</td> 
+      <td>查看回复</td>
+    </tr>
+  </tbody>
+  <tbody>
+    {volist name="row" id="rd"}
+       <tr> 
+        <td>{$rd.actuser}</td>
+        <td>{$rd.createtime|date='Y-m-d H:i:s',###}</td>
+        <td>
+          {eq name="rd.status" value="0"}<span class="fm_status1">待审核</span>{/eq}
+          {eq name="rd.status" value="1"}<span class="fm_status2">已审核</span>{/eq}
+          {eq name="rd.status" value="2"}<span class="fm_status3">已拒绝</span>{/eq}
+                                                                 
+        </td>
+        <td>
+          <div class="chasneq" onclick="A.showdetail(this)">
+              点击查看
+          </div>
+        </td>
+       </tr> 
+       <tr class="notes_tr"><td colspan="4">{$rd.notes ? $rd.notes: '暂无数据' }</td></tr>
+     
+     {/volist}
+  </tbody>
+  
+  
+</table>
+<div class="pagebos">
+  <div><span class="rows">共{$total}条记录</span></div>   
+  <div class="pagebtn_p" data-page="{$page ? $page : 1}" data-total="{$pagetotal}">
+    <a href="javascript:;" onclick="A.prev(this)" >上一页</a>
+    <a href="javascript:;" onclick="A.next(this)" >下一页</a>
+  </div>
+</div>
+
+ 

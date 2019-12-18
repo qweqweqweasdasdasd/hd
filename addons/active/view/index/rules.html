@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/reset.css">
+  <link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script src="js/screen.js"></script>
+  <script src="js/jquery.js"></script>
+  <script src="js/swiper.min.js"></script>
+  <script type="text/javascript" src="js/jquery.SuperSlide.2.1.js"></script>
+ </head>
+ <body>
+  	<div class="header">
+    	<a href="index.html" class="back">返回</a>
+    	活动规则
+        <a href="javascript:void(0)" class="rep"></a>
+    </div>
+    <div class="line"></div>
+    <div class="ruleBox">
+    	<h2>每周一次 专属豪礼</h2>
+        <p>即日起,全体新老会员在【178棋牌】存款进行娱乐,参与条件（每周存款2次以上,总存款100元以上）星期日当日最高单笔存款100元以上未投注前即可前往（以星期日单笔存款为准）：DD178.cc优惠大厅申请相应的回馈彩金！（投注后将视为自动放弃）</p>
+        <p>一倍打码</p>
+        <p>500+	    38</p>
+        <p>2000+	138</p>
+        <p>5000+	388</p>
+        <p>10000+	688</p>
+        <p>注：棋牌游戏中的百家乐，龙虎斗，红黑大战不参与此优惠。</p>
+        <p>例如：星期一存款100元，星期二存款50元，星期日存款1万元未投注前即可申请688元的彩金</p>
+        <p>活动细则：</p>
+        <p>1.此活动仅限每周日开放，该优惠，不与其它存送优惠同时进行；</p>
+        <p>2.满足此优惠活动条件的会员，请联系在线客服申请，所得彩金需一倍打码方可提现；</p>
+        <p>3.同一会员、同一地址、同一电子邮箱、同一电话、相同的支付方式及IP地址等只能一个账号享有优惠；</p>
+        <p>4.若会员有重复申请或注册多账号行为，公司保留取消或收回优惠彩金及盈利的权利；</p>
+        <p>5.参与该优惠，即表示您同意 《一般优惠规则与条款》。</p>
+    </div>
+    <div class="h120"></div>
+    <div class="footer">
+    	<a href="index.html"><img src="images/foot4.png"><p>返回首页</p></a>
+        <a href=""><img src="images/foot1.png"><p>下载最新APP</p></a>
+        <a href=""><img src="images/foot2.png"><p>在线客服</p></a>
+        <a href=""><img src="images/foot3.png"><p>手机网页版</p></a>
+    </div>
+    <div id="screen"></div>
+    <!--活动查询弹窗-->
+    <div class="activeSearch" id="searchActive">
+    	<div class="activeBox">
+        	<div class="activeTit">
+            	<img src="images/tit1.png">
+            </div>
+            <div class="activeForm">
+            	<p><input type="text" placeholder="请填写会员ID"></p>
+                <p>
+                	<select>
+                    	<option>请选择查询项目</option>
+                        <option>项目1</option>
+                        <option>项目2</option>
+                        <option>项目3</option>
+                    </select>
+                </p>
+                <p><input type="text" class="check" placeholder="请填写验证码"><img src="images/check.jpg"></p>
+            </div>
+            <a href="" class="subBtn"></a>
+        </div>
+        <a href="javascript:void(0)" class="closeBtn"></a>
+    </div>
+    <!--申请进度查询弹窗-->
+    <div class="activeSearch" id="searchJd">
+    	<div class="activeBox">
+        	<div class="activeTit">
+            	<img src="images/tit1.png">
+            </div>
+            <div class="activeForm">
+            	<p><input type="text" placeholder="请填写会员ID"></p>
+                <p>
+                	<select>
+                    	<option>请选择查询项目</option>
+                        <option>项目1</option>
+                        <option>项目2</option>
+                        <option>项目3</option>
+                    </select>
+                </p>
+            </div>
+            <a href="" class="subBtn2"></a>
+        </div>
+        <a href="javascript:void(0)" class="closeBtn"></a>
+    </div>
+ </body>
+<script>
+	//轮播图
+	var swiperBanner = new Swiper('.banner .swiper-container', {
+	  pagination: {
+		el: '.banner .swiper-pagination',
+	  },
+	  autoplay:true,
+	  loop:true,
+	});
+	//无缝滚动
+	jQuery(".txtMarquee-top").slide({mainCell:".bd ul",autoPlay:true,effect:"topMarquee",vis:3,interTime:50});
+	//选项卡切换
+	$('.tabTit span').click(function(){
+		var num = $(this).index();
+		$(this).addClass('cur').siblings().removeClass('cur');
+		$('.choseBar .choseBox').eq(num).show().siblings().hide();
+	})
+	//优惠活动申请
+	$('.replay').click(function(){
+		$('#screen').fadeIn();
+		$('#searchActive').fadeIn();
+	})
+	$('.rep').click(function(){
+		$('#screen').fadeIn();
+		$('#searchActive').fadeIn();
+	})
+	$('.closeBtn').click(function(){
+		$('#screen').fadeOut();
+		$('#searchActive').fadeOut();
+		$('#searchJd').fadeOut();
+	})
+	//进度查询
+	$('.searchBtn').click(function(){
+		$('#screen').fadeIn();
+		$('#searchJd').fadeIn();
+	})
+</script>
+</html>
